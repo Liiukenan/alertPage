@@ -1,0 +1,85 @@
+html,body{
+    margin:0
+    padding:0
+    
+}
+button{
+    outline: none
+}
+.main{
+    width: 100%
+    height: 100vh
+    overflow: hidden
+    background: rgba(0,0,0,0.50);
+    .home{
+        width: 360px
+        height 404px
+        position fixed
+        left 50%
+        top 50%
+        transform translate(-50%,-50%)
+        .dancer{
+            width 360px
+            height: 404px
+        }
+        .btn{
+            width: 167px
+            height 40px
+            position absolute
+            left 50%
+            bottom 10.7px
+            transform: translateX(-50%)
+        }
+        .btn-animate{
+            animation: revolving 0.5s linear infinite alternate;
+            width: 167px
+            height 40px
+            position absolute
+            left 50%
+            bottom 10.7px
+            transform: translateX(-50%)
+        }
+        .go{
+            display flex
+            position absolute
+            left 50%
+            transform: translateX(-50%)
+            font-weight: bold
+            bottom 10.7px
+            width: 167px
+            height 40px
+            justify-content: center;
+            align-items: center;
+            color: #fff
+            font-size: 22px
+            z-index 999
+            background none
+            border none
+            text-shadow: 0 1px 5px #FF86E4;
+        }
+        @-webkit-keyframes revolving{
+            0%{
+                transform:translateX(-50%) scale(1)
+            }
+            50%{
+                transform:translateX(-50%) scale(1.07);
+            }
+            100%{
+               transform:translateX(-50%) scale(1)
+            }
+        }
+    }
+    .time{
+        position: absolute
+        left 50%
+        bottom 55px
+        color: #8CFFFD;
+        text-shadow: 0 1px 5px #2DA6FE;
+        transform: translateX(-50%)
+        width: 154px
+        
+
+    }
+}
+
+
