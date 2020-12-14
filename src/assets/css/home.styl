@@ -1,6 +1,7 @@
 html,body{
     margin:0
     padding:0
+    font-family: "arial"
     
 }
 button{
@@ -22,6 +23,12 @@ button{
             width 360px
             height: 404px
         }
+        .dancer-main{
+            width: 360px;
+            height: 404px;
+            background: url('../images/pic_galaclub_pop_bg.png') no-repeat
+            background-size: cover
+        }
         .btn{
             width: 167px
             height 40px
@@ -39,7 +46,7 @@ button{
             bottom 10.7px
             transform: translateX(-50%)
         }
-        .go{
+        .go,.iphoneGo{
             display flex
             position absolute
             left 50%
@@ -57,7 +64,13 @@ button{
             border none
             text-shadow: 0 1px 5px #FF86E4;
         }
-        @-webkit-keyframes revolving{
+        .iphoneGo{
+            background: #DA17AF;
+            border: 2px solid #FF77E4;
+            border-radius: 27px
+            box-shadow: 0 0 7px 0 rgba(242,43,198,0.80);
+        }
+        @keyframes revolving{
             0%{
                 transform:translateX(-50%) scale(1)
             }
@@ -72,11 +85,12 @@ button{
     .time{
         position: absolute
         left 50%
-        bottom 55px
+        bottom 34px
         color: #8CFFFD;
         text-shadow: 0 1px 5px #2DA6FE;
         transform: translateX(-50%)
-        width: 154px
+        width: 254px
+        height 102px
         
 
     }

@@ -2,7 +2,7 @@ module.exports = {
   modules: [
     {
       name: "测试环境",
-      env: "test",
+      env: "build",
       ssh: {
         host: "54.222.180.211",
         username: "ubuntu",
@@ -12,8 +12,8 @@ module.exports = {
           "/Users/liukenan/.ssh/id_rsa"
         ) //mac用户举例
       },
-      buildCommand: "test",
-      localPath: "out",
+      buildCommand: "build",
+      localPath: "build",
       remotePath: "/data/www/alertPage"
     }
   ]
